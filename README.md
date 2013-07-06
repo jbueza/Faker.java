@@ -6,7 +6,6 @@ A tool for generating fake data. This is inspired by [Faker.js](https://github.c
 
 ## Usage
 
-
 ### Person API
 
 ```java
@@ -32,7 +31,19 @@ Faker faker = new Faker();
 
 String paragraphs = faker.LoremIpsum().paragraphs(2);                // Generates two paragraphs
 ```
+## Download
+
+Go here to the [Releases view of the repository!](https://github.com/jbueza/Faker.java/releases)
 
 ## License
 
 MIT.
+
+
+## Special Thanks
+
+For inspiration:
+
+- https://github.com/oliverdodd/jlorem/
+- https://github.com/Marak/Faker.js
+- https://github.com/stympy/faker
