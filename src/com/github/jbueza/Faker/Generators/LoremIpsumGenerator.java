@@ -40,7 +40,6 @@ public class LoremIpsumGenerator {
             for (int i = 0; i < r; i++)
                 s.append(sentenceFragment()).append(", ");
         }
-        // last fragment + punctuation
         return s.append(sentenceFragment()).append(randomPunctuation())
                 .toString();
     }
