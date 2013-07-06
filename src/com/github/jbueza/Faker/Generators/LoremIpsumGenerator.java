@@ -2,32 +2,10 @@ package com.github.jbueza.Faker.Generators;
 
 import java.util.Random;
 
-/**
- * Created with IntelliJ IDEA.
- * User: jbueza
- * Date: 2013-07-05
- * Time: 8:33 PM
- * To change this template use File | Settings | File Templates.
- */
 public class LoremIpsumGenerator {
 
-
-    /*
-     * The Lorem Ipsum Standard Paragraph
-     */
-    protected final String standard = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    private final String[] words = {"a", "ac", "accumsan", "ad", "adipiscing",
-            "aenean", "aliquam", "aliquet", "amet", "ante", "aptent", "arcu",
-            "at", "auctor", "augue", "bibendum", "blandit", "class", "commodo",
-            "condimentum", "congue", "consectetur", "consequat", "conubia",
-            "convallis", "cras", "cubilia", "cum", "curabitur", "curae",
-            "cursus", "dapibus", "diam", "dictum", "dictumst", "dignissim",
-            "dis", "dolor", "donec", "dui", "duis", "egestas", "eget",
-            "eleifend", "elementum", "elit", "enim", "erat", "eros", "est",
-            "et", "etiam", "eu", "euismod", "facilisi", "facilisis", "fames",
-            "faucibus", "felis", "fermentum", "feugiat", "fringilla", "fusce",
-            "gravida", "habitant", "habitasse", "hac", "hendrerit",
-            "himenaeos", "iaculis", "id", "imperdiet", "in", "inceptos",
+    protected String standard = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    private String[] words = {"a", "ac", "accumsan", "ad", "adipiscing", "aenean", "aliquam", "aliquet", "amet", "ante", "aptent", "arcu", "at", "auctor", "augue", "bibendum", "blandit", "class", "commodo", "condimentum", "congue", "consectetur", "consequat", "conubia", "convallis", "cras", "cubilia", "cum", "curabitur", "curae", "cursus", "dapibus", "diam", "dictum", "dictumst", "dignissim", "dis", "dolor", "donec", "dui", "duis", "egestas", "eget", "eleifend", "elementum", "elit", "enim", "erat", "eros", "est", "et", "etiam", "eu", "euismod", "facilisi", "facilisis", "fames", "faucibus", "felis", "fermentum", "feugiat", "fringilla", "fusce", "gravida", "habitant", "habitasse", "hac", "hendrerit", "himenaeos", "iaculis", "id", "imperdiet", "in", "inceptos",
             "integer", "interdum", "ipsum", "justo", "lacinia", "lacus",
             "laoreet", "lectus", "leo", "libero", "ligula", "litora",
             "lobortis", "lorem", "luctus", "maecenas", "magna", "magnis",
@@ -47,29 +25,19 @@ public class LoremIpsumGenerator {
             "urna", "ut", "varius", "vehicula", "vel", "velit", "venenatis",
             "vestibulum", "vitae", "vivamus", "viverra", "volutpat",
             "vulputate"};
-    private final String[] punctuation = {".", "?"};
-    private final String _n = System.getProperty("line.separator");
+
+    private String[] punctuation = {".", "?"};
+    private String _n = System.getProperty("line.separator");
     private Random random = new Random();
 
-    /**
-     * Get a random word
-     */
     public String randomWord() {
         return words[random.nextInt(words.length - 1)];
     }
 
-    /**
-     * Get a random punctuation mark
-     */
     public String randomPunctuation() {
         return punctuation[random.nextInt(punctuation.length - 1)];
     }
 
-    /**
-     * Get a string of words
-     *
-     * @param count - the number of words to fetch
-     */
     public String words(int count) {
         StringBuilder s = new StringBuilder();
         while (count-- > 0)
@@ -77,9 +45,6 @@ public class LoremIpsumGenerator {
         return s.toString().trim();
     }
 
-    /**
-     * Get a sentence fragment
-     */
     public String sentenceFragment() {
         return words(random.nextInt(10) + 3);
     }
