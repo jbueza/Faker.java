@@ -8,7 +8,6 @@ A tool for generating fake data. This is inspired by Faker.js, Faker.rb.
 
 Faker faker = new Faker();
 
-
 String firstName = faker.firstName();
 String lastName = faker.lastName();
 String address = faker.address();
