@@ -35,6 +35,8 @@ String paragraphs = faker.LoremIpsum().paragraphs(2);                // Generate
 
 Go here to the [Releases view of the repository!](https://github.com/jbueza/Faker.java/releases)
 
+Or [just download directly](https://github.com/jbueza/Faker.java/releases/download/v0.0.1/Faker.java.jar).
+
 ## License
 
 MIT.
